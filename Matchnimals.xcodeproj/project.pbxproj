@@ -17,13 +17,16 @@
 		2ECA6027171B024D00F55660 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECA6026171B024D00F55660 /* Default@2x.png */; };
 		2ECA6029171B024D00F55660 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2ECA6028171B024D00F55660 /* Default-568h@2x.png */; };
 		2ECA602C171B024D00F55660 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ECA602A171B024D00F55660 /* MainStoryboard.storyboard */; };
-		2ECA602F171B024D00F55660 /* WZMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA602E171B024D00F55660 /* WZMViewController.m */; };
+		2ECA602F171B024D00F55660 /* WZMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA602E171B024D00F55660 /* WZMMainViewController.m */; };
 		2ECA6037171B024E00F55660 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6036171B024E00F55660 /* SenTestingKit.framework */; };
 		2ECA6038171B024E00F55660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6012171B024D00F55660 /* UIKit.framework */; };
 		2ECA6039171B024E00F55660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6014171B024D00F55660 /* Foundation.framework */; };
 		2ECA6041171B024E00F55660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECA603F171B024E00F55660 /* InfoPlist.strings */; };
 		2ECA6044171B024E00F55660 /* MatchnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA6043171B024E00F55660 /* MatchnimalsTests.m */; };
 		2ECA604F171B033E00F55660 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA604E171B033E00F55660 /* libOCMock.a */; };
+		2ED449B41726E5B700A2E320 /* WZMGameWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED449B31726E5B700A2E320 /* WZMGameWinViewController.m */; };
+		2ED449BB1727177300A2E320 /* WZMGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED449B91727177300A2E320 /* WZMGamePlayViewController.m */; };
+		2ED449C5172AD1E800A2E320 /* WZMCreditsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED449C4172AD1E800A2E320 /* WZMCreditsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +54,8 @@
 		2ECA6026171B024D00F55660 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		2ECA6028171B024D00F55660 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2ECA602B171B024D00F55660 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		2ECA602D171B024D00F55660 /* WZMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZMViewController.h; sourceTree = "<group>"; };
-		2ECA602E171B024D00F55660 /* WZMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZMViewController.m; sourceTree = "<group>"; };
+		2ECA602D171B024D00F55660 /* WZMMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WZMMainViewController.h; sourceTree = "<group>"; };
+		2ECA602E171B024D00F55660 /* WZMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WZMMainViewController.m; sourceTree = "<group>"; };
 		2ECA6035171B024E00F55660 /* MatchnimalsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MatchnimalsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECA6036171B024E00F55660 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2ECA603E171B024E00F55660 /* MatchnimalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchnimalsTests-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +69,12 @@
 		2ECA6054171B034D00F55660 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		2ECA6055171B034D00F55660 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		2ECA6056171B034D00F55660 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		2ED449B21726E5B700A2E320 /* WZMGameWinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameWinViewController.h; sourceTree = "<group>"; };
+		2ED449B31726E5B700A2E320 /* WZMGameWinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameWinViewController.m; sourceTree = "<group>"; };
+		2ED449B81727177300A2E320 /* WZMGamePlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGamePlayViewController.h; sourceTree = "<group>"; };
+		2ED449B91727177300A2E320 /* WZMGamePlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGamePlayViewController.m; sourceTree = "<group>"; };
+		2ED449C3172AD1E800A2E320 /* WZMCreditsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMCreditsViewController.h; sourceTree = "<group>"; };
+		2ED449C4172AD1E800A2E320 /* WZMCreditsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMCreditsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +139,15 @@
 				2ECA6021171B024D00F55660 /* WZMAppDelegate.h */,
 				2ECA6022171B024D00F55660 /* WZMAppDelegate.m */,
 				2ECA602A171B024D00F55660 /* MainStoryboard.storyboard */,
-				2ECA602D171B024D00F55660 /* WZMViewController.h */,
-				2ECA602E171B024D00F55660 /* WZMViewController.m */,
+				2ECA602D171B024D00F55660 /* WZMMainViewController.h */,
+				2ECA602E171B024D00F55660 /* WZMMainViewController.m */,
 				2ECA6019171B024D00F55660 /* Supporting Files */,
+				2ED449B21726E5B700A2E320 /* WZMGameWinViewController.h */,
+				2ED449B31726E5B700A2E320 /* WZMGameWinViewController.m */,
+				2ED449B81727177300A2E320 /* WZMGamePlayViewController.h */,
+				2ED449B91727177300A2E320 /* WZMGamePlayViewController.m */,
+				2ED449C3172AD1E800A2E320 /* WZMCreditsViewController.h */,
+				2ED449C4172AD1E800A2E320 /* WZMCreditsViewController.m */,
 			);
 			path = Matchnimals;
 			sourceTree = "<group>";
@@ -305,7 +320,10 @@
 			files = (
 				2ECA601F171B024D00F55660 /* main.m in Sources */,
 				2ECA6023171B024D00F55660 /* WZMAppDelegate.m in Sources */,
-				2ECA602F171B024D00F55660 /* WZMViewController.m in Sources */,
+				2ECA602F171B024D00F55660 /* WZMMainViewController.m in Sources */,
+				2ED449B41726E5B700A2E320 /* WZMGameWinViewController.m in Sources */,
+				2ED449BB1727177300A2E320 /* WZMGamePlayViewController.m in Sources */,
+				2ED449C5172AD1E800A2E320 /* WZMCreditsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +524,7 @@
 				2ECA6049171B024E00F55660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2ECA604A171B024E00F55660 /* Build configuration list for PBXNativeTarget "MatchnimalsTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +533,7 @@
 				2ECA604C171B024E00F55660 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
