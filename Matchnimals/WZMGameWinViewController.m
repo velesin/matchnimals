@@ -1,23 +1,23 @@
 //
-//  WZMViewController.m
+//  WZMCreditsViewController.m
 //  Matchnimals
 //
-//  Created by Wojtek on 4/14/13.
+//  Created by Wojtek on 4/23/13.
 //  Copyright (c) 2013 Wojciech Zawistowski. All rights reserved.
 //
 
-#import "WZMViewController.h"
+#import "WZMGameWinViewController.h"
 
-@interface WZMViewController ()
+@interface WZMGameWinViewController ()
 
 @end
 
-@implementation WZMViewController
+@implementation WZMGameWinViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

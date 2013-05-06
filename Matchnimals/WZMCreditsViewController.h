@@ -1,13 +1,13 @@
 //
-//  WZMViewController.h
+//  WZMCreditsViewController.h
 //  Matchnimals
 //
-//  Created by Wojtek on 4/14/13.
+//  Created by Wojtek on 4/26/13.
 //  Copyright (c) 2013 Wojciech Zawistowski. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface WZMViewController : UIViewController
+@interface WZMCreditsViewController : UIViewController
 
 @end
