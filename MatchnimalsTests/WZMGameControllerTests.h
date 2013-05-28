@@ -8,18 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface WZMGameControllerBase : SenTestCase
+@interface WZMGameControllerTests : SenTestCase
 
 @end
-
-@interface WZMGameControllerGameNotYetStartedTests : WZMGameControllerBase
-
-@end
-
-//@interface WZMGameControllerGameStartedAndTheRoundIsNotTheLastOneTests : WZMGameControllerGameNotYetStartedTests
-//
-//@end
-//
-//@interface WZMGameControllerGameIsOnTheSecondRound : WZMGameControllerGameNotYetStartedTests
-//
-//@end

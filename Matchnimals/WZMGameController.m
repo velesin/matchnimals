@@ -7,20 +7,54 @@
 //
 
 #import "WZMGameController.h"
+#import "WZMGameRound.h"
 
 @implementation WZMGameController {
     NSArray* _rounds;
+    NSInteger _currentRoundNumber;
 }
 
 - (void)startNewGame
 {
     _rounds = [self.dataSource roundsForNewGame];
-    [self.delegate newRound:_rounds[0]];
+    _currentRoundNumber = 1;
+    
+    [self.delegate newRound:[self currentRound]];
 }
 
 - (void)giveAnswerWithNumber:(NSInteger)answerNumber
 {
-    [self.delegate newRound:_rounds[1]];
+    if (!_rounds) {
+        @throw [NSException
+                exceptionWithName:NSGenericException
+                reason:@"You must startNewGame before trying to giveAnswerWithNumber"
+                userInfo:nil];
+    }
+    
+    if ([[self currentRound] correctAnswerNumber] != answerNumber) {
+        [self.delegate wrongAnswer:answerNumber];
+        return;
+    }
+    
+    if ([self isLastRound]) {
+        [self.delegate gameCompleted];
+        return;
+    }
+    
+    _currentRoundNumber += 1;
+    [self.delegate newRound:[self currentRound]];
+}
+
+#pragma mark - private methods
+
+- (BOOL)isLastRound
+{
+    return _currentRoundNumber == [_rounds count];
+}
+
+- (WZMGameRound*)currentRound
+{
+    return _rounds[_currentRoundNumber - 1];
 }
 
 @end

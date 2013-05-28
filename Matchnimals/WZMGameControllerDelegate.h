@@ -12,5 +12,7 @@
 @protocol WZMGameControllerDelegate <NSObject>
 
 - (void)newRound:(WZMGameRound*)round;
+- (void)gameCompleted;
+- (void)wrongAnswer:(NSInteger)answerNumber;
 
 @end

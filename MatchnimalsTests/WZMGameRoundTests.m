@@ -16,7 +16,6 @@
     NSString* questionImageNameFixture;
     NSArray* answersImageNamesFixture;
     NSInteger correctAnswerNumberFixture;
-    NSInteger wrongAnswerNumberFixture;
 }
 
 - (void)setUp
@@ -24,7 +23,6 @@
     questionImageNameFixture = @"question image name";
     answersImageNamesFixture = @[@"answer image name 1", @"answer image name 2"];
     correctAnswerNumberFixture = 1;
-    wrongAnswerNumberFixture = 2;
     
     gamePlayRound = [[WZMGameRound alloc] initWithQuestionImageName:questionImageNameFixture
                                               answersImageNames:answersImageNamesFixture
@@ -52,14 +50,11 @@
     STAssertThrowsSpecificNamed([gamePlayRound imageNameForAnswer:0], NSException, NSRangeException, nil);
 }
 
-- (void)test_that_isAnswerCorrect_returns_YES_if_number_matches_the_right_answer
+- (void)test_that_correctAnswerNumber_returns_correct_value
 {
-    STAssertTrue([gamePlayRound isAnswerCorrect:correctAnswerNumberFixture], nil);
+    STAssertEquals([gamePlayRound correctAnswerNumber], correctAnswerNumberFixture, nil);
 }
 
-- (void)test_that_isAnswerCorrect_returns_NO_if_number_does_not_match_the_right_answer
-{
-    STAssertFalse([gamePlayRound isAnswerCorrect:wrongAnswerNumberFixture], nil);
-}
+//test that correct answer cannot be out of bounds
 
 @end

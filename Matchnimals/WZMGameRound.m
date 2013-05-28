@@ -11,7 +11,6 @@
 @implementation WZMGameRound
 {
     NSArray* _answersImageNames;
-    int _correctAnswerNumber;
 }
 
 - (id)initWithQuestionImageName:(NSString*)questionImageName
@@ -32,11 +31,6 @@
 - (NSString*)imageNameForAnswer:(NSInteger)answerNumber
 {
     return _answersImageNames[answerNumber - 1];
-}
-
-- (BOOL)isAnswerCorrect:(NSInteger)answerNumber
-{
-    return (answerNumber == _correctAnswerNumber);
 }
 
 @end

@@ -31,7 +31,7 @@
 
 - (IBAction)answer:(id)sender
 {
-    if ([[self currentRound] isAnswerCorrect:[sender tag]]) {
+    if ([[self currentRound] correctAnswerNumber] == [sender tag]) {
         _currentRoundNumber += 1;
         [self setImagesForCurrentRound];
     }
