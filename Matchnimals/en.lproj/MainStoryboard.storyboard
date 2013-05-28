@@ -81,21 +81,38 @@
                                     <outletCollection property="gestureRecognizers" destination="EVE-Z0-svP" appends="YES" id="uf1-nY-C07"/>
                                 </connections>
                             </imageView>
-                            <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7S-aB-CAC">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="1O0-oh-fjI" kind="embed" identifier="ImagesCollection" id="hce-Cw-miE"/>
-                                </connections>
-                            </containerView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="N95-ya-fQu">
+                                <color key="backgroundColor" red="1" green="0.98577403350444059" blue="0.23020274752545689" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="387" id="UeG-Zl-MLd"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fdc-wv-ozE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="j9w-mU-3rn">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" red="0.18549482194013667" green="1" blue="0.11029185767893701" alpha="1" colorSpace="calibratedRGB"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="V7S-aB-CAC" firstAttribute="leading" secondItem="GYF-b2-zTF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="CfI-cf-fcE"/>
-                            <constraint firstAttribute="trailing" secondItem="V7S-aB-CAC" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Nyr-w6-Yrr"/>
-                            <constraint firstItem="V7S-aB-CAC" firstAttribute="top" secondItem="GYF-b2-zTF" secondAttribute="top" constant="335" id="PJr-39-3e8"/>
+                            <constraint firstAttribute="bottom" secondItem="N95-ya-fQu" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="8fk-Rf-jOa"/>
                             <constraint firstItem="ULf-Pk-NI1" firstAttribute="leading" secondItem="GYF-b2-zTF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Yx2-vD-R9e"/>
                             <constraint firstItem="ULf-Pk-NI1" firstAttribute="top" secondItem="GYF-b2-zTF" secondAttribute="top" constant="20" symbolic="YES" type="default" id="dy3-Gg-rDq"/>
-                            <constraint firstAttribute="bottom" secondItem="V7S-aB-CAC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="nel-CI-zeh"/>
+                            <constraint firstItem="N95-ya-fQu" firstAttribute="leading" secondItem="GYF-b2-zTF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="f1L-L9-qwg"/>
+                            <constraint firstAttribute="trailing" secondItem="N95-ya-fQu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="gGP-ed-MAU"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -118,70 +135,105 @@
         <!--Game Play View Controller-->
         <scene sceneID="Wef-Lk-G3a">
             <objects>
-                <viewController id="6z4-Tu-o1N" customClass="WZMGamePlayViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamePlayViewController" id="6z4-Tu-o1N" customClass="WZMGamePlayViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6H1-le-0jN">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-cA-Ctv">
+                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-cA-Ctv">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="26c-c2-a7l"/>
-                                    <constraint firstAttribute="height" constant="99" id="BH4-7h-tKY"/>
+                                    <constraint firstAttribute="height" constant="100" id="yNz-uD-5a3"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="KIS-ks-crr" appends="YES" id="0P8-Hy-Ss8"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="whT-8G-i23">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="309" id="wVN-J4-Hjn"/>
-                                    <constraint firstAttribute="width" constant="485" id="zz7-4B-5CS"/>
-                                </constraints>
-                            </imageView>
-                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-Zp-ZrK">
+                            <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" image="rabbit.png" translatesAutoresizingMaskIntoConstraints="NO" id="whT-8G-i23"/>
+                            <imageView tag="1" contentMode="scaleToFill" image="crocodile_tail.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qct-Zp-ZrK">
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="1fe-p5-lem"/>
-                                    <constraint firstAttribute="height" constant="128" id="U8M-Xp-AMO"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="vci-8N-fa9" appends="YES" id="2zu-ZV-86E"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IIi-8O-Tk9">
+                            <imageView tag="2" contentMode="scaleToFill" image="turkey_tail.png" translatesAutoresizingMaskIntoConstraints="NO" id="IIi-8O-Tk9">
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Hg0-ZP-Ldn"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="E51-wu-yjT" appends="YES" id="TAS-Xf-F3u"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ww7-d1-g2y">
+                            <imageView tag="3" contentMode="scaleToFill" image="rabbit_tail.png" translatesAutoresizingMaskIntoConstraints="NO" id="ww7-d1-g2y">
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="yGI-lW-a1d"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tIK-Uu-zAi" appends="YES" id="wIR-mB-94Y"/>
                                 </connections>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-KG-dPp">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="nGp-uW-I0z"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-z0-2A6">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Uev-IK-oAa"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-Ji-qcN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="UjZ-kg-Cns"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-t0-gml">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="pun-gB-cCj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-vO-u6s">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VbI-Ak-MgP"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="EFs-cy-BiU"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yVZ-xJ-vaK"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ejz-zv-HnP"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-ju-fXB"/>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.91926292677419974" blue="0.90838343467842553" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="centerX" secondItem="Qct-Zp-ZrK" secondAttribute="centerX" type="default" id="2hr-AV-6f2"/>
                             <constraint firstItem="W3G-cA-Ctv" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" constant="20" symbolic="YES" type="default" id="39P-gr-Afy"/>
-                            <constraint firstItem="ww7-d1-g2y" firstAttribute="bottom" secondItem="IIi-8O-Tk9" secondAttribute="bottom" type="default" id="47K-8U-DPP"/>
-                            <constraint firstItem="Qct-Zp-ZrK" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="98" id="9QW-82-Gsn"/>
-                            <constraint firstItem="whT-8G-i23" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" constant="103" id="CAc-kw-Tjk"/>
+                            <constraint firstItem="uD4-KG-dPp" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3u6-Ln-lD2"/>
+                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="aGo-vO-u6s" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3ud-CG-75O"/>
+                            <constraint firstItem="6fi-z0-2A6" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4FE-Cs-vf0"/>
+                            <constraint firstAttribute="trailing" secondItem="EFs-cy-BiU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CmC-bB-Cyf"/>
+                            <constraint firstItem="UWU-t0-gml" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DLD-1C-1pt"/>
                             <constraint firstItem="W3G-cA-Ctv" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="E5X-an-2tl"/>
-                            <constraint firstAttribute="bottom" secondItem="Qct-Zp-ZrK" secondAttribute="bottom" constant="155" id="KNo-e4-WJ7"/>
-                            <constraint firstItem="whT-8G-i23" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="277" id="RaF-A0-GLR"/>
-                            <constraint firstAttribute="trailing" secondItem="ww7-d1-g2y" secondAttribute="trailing" constant="112" id="eoU-Ms-1R0"/>
-                            <constraint firstItem="IIi-8O-Tk9" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="364" id="h8a-0K-pGs"/>
-                            <constraint firstItem="IIi-8O-Tk9" firstAttribute="bottom" secondItem="Qct-Zp-ZrK" secondAttribute="bottom" type="default" id="hUQ-j1-b1k"/>
-                            <constraint firstItem="ww7-d1-g2y" firstAttribute="top" secondItem="IIi-8O-Tk9" secondAttribute="top" type="default" id="myG-nw-oxJ"/>
-                            <constraint firstItem="IIi-8O-Tk9" firstAttribute="top" secondItem="Qct-Zp-ZrK" secondAttribute="top" type="default" id="yAI-sp-7FX"/>
+                            <constraint firstItem="aGo-vO-u6s" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="F6p-mr-KNd"/>
+                            <constraint firstItem="EFs-cy-BiU" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" constant="20" symbolic="YES" type="default" id="F7R-fR-onZ"/>
+                            <constraint firstItem="Qct-Zp-ZrK" firstAttribute="leading" secondItem="whT-8G-i23" secondAttribute="leading" type="default" id="IH2-MX-R6h"/>
+                            <constraint firstItem="ww7-d1-g2y" firstAttribute="trailing" secondItem="whT-8G-i23" secondAttribute="trailing" type="default" id="Ind-Vp-OA5"/>
+                            <constraint firstItem="whT-8G-i23" firstAttribute="centerY" secondItem="EFs-cy-BiU" secondAttribute="centerY" type="default" id="IpJ-q1-2yQ"/>
+                            <constraint firstItem="ejz-zv-HnP" firstAttribute="leading" secondItem="yVZ-xJ-vaK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Ixu-vj-hzT"/>
+                            <constraint firstItem="6fi-z0-2A6" firstAttribute="top" secondItem="OM1-Ji-qcN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jay-Ho-dBi"/>
+                            <constraint firstItem="Qct-Zp-ZrK" firstAttribute="centerY" secondItem="yVZ-xJ-vaK" secondAttribute="centerY" type="default" id="K1Y-79-YCM"/>
+                            <constraint firstItem="IIi-8O-Tk9" firstAttribute="centerX" secondItem="ejz-zv-HnP" secondAttribute="centerX" type="default" id="KEK-sG-Kwx"/>
+                            <constraint firstItem="OM1-Ji-qcN" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KXC-hc-BDh"/>
+                            <constraint firstItem="UWU-t0-gml" firstAttribute="top" secondItem="aGo-vO-u6s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QZO-qc-rzl"/>
+                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="uD4-KG-dPp" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RmX-7H-gaI"/>
+                            <constraint firstAttribute="bottom" secondItem="uD4-KG-dPp" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ScK-il-Cg9"/>
+                            <constraint firstAttribute="bottom" secondItem="gVK-ju-fXB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="TFO-WS-YuO"/>
+                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="W3G-cA-Ctv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VMh-B6-3bc"/>
+                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="UWU-t0-gml" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cvh-XN-p1c"/>
+                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="OM1-Ji-qcN" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ebf-iJ-ssJ"/>
+                            <constraint firstItem="ww7-d1-g2y" firstAttribute="top" secondItem="IIi-8O-Tk9" secondAttribute="top" type="default" id="gQP-lr-6OP"/>
+                            <constraint firstAttribute="bottom" secondItem="ejz-zv-HnP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="iY0-8c-23y"/>
+                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="OM1-Ji-qcN" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="j1X-hG-dnY"/>
+                            <constraint firstItem="OM1-Ji-qcN" firstAttribute="top" secondItem="UWU-t0-gml" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mWI-6M-lJV"/>
+                            <constraint firstItem="uD4-KG-dPp" firstAttribute="top" secondItem="6fi-z0-2A6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oQy-RZ-zT6"/>
+                            <constraint firstItem="Qct-Zp-ZrK" firstAttribute="top" secondItem="IIi-8O-Tk9" secondAttribute="top" type="default" id="qET-I2-dub"/>
+                            <constraint firstAttribute="bottom" secondItem="yVZ-xJ-vaK" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="r6G-Tb-C9y"/>
+                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="6fi-z0-2A6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="sn2-6f-goW"/>
+                            <constraint firstAttribute="trailing" secondItem="gVK-ju-fXB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xRv-bR-rfA"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -191,6 +243,10 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="_answer1ImageView" destination="Qct-Zp-ZrK" id="c8v-6f-GNw"/>
+                        <outlet property="_answer2ImageView" destination="IIi-8O-Tk9" id="bM7-P2-UD6"/>
+                        <outlet property="_answer3ImageView" destination="ww7-d1-g2y" id="UDb-Bq-elP"/>
+                        <outlet property="_questionImageView" destination="whT-8G-i23" id="QXA-jO-sTB"/>
                         <segue destination="o4Z-YP-GCz" kind="modal" identifier="GameWin" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="AA3-Qy-lcO"/>
                     </connections>
                 </viewController>
@@ -237,7 +293,7 @@
                                     <outletCollection property="gestureRecognizers" destination="va3-A9-nCU" appends="YES" id="Ag8-I1-XMw"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-Pb-wmy">
+                            <imageView tag="1" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-Pb-wmy">
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="suA-sM-hIO"/>
@@ -246,7 +302,7 @@
                                     <outletCollection property="gestureRecognizers" destination="tcF-ia-7Eo" appends="YES" id="a9O-Ve-YoN"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-tP-Mni">
+                            <imageView multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-tP-Mni">
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="LEX-Ve-Mtp"/>
@@ -255,7 +311,7 @@
                                     <outletCollection property="gestureRecognizers" destination="zon-KQ-LQf" appends="YES" id="jkr-hv-WsK"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-wb-em2">
+                            <imageView tag="2" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-wb-em2">
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="A1U-5A-TcB"/>
@@ -265,7 +321,7 @@
                                     <outletCollection property="gestureRecognizers" destination="sGJ-em-ewS" appends="YES" id="UA9-zN-zxt"/>
                                 </connections>
                             </imageView>
-                            <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="A0Y-zW-AMn">
+                            <imageView tag="3" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="A0Y-zW-AMn">
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="bWk-Lk-VFt"/>
@@ -331,48 +387,17 @@
             </objects>
             <point key="canvasLocation" x="-234" y="1"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="wX5-nG-G2i">
-            <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="1O0-oh-fjI" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="2zq-e2-mAr">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gr2-nv-CKc">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9dH-3w-U8F">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="1O0-oh-fjI" id="1uf-4t-z64"/>
-                            <outlet property="delegate" destination="1O0-oh-fjI" id="kof-jj-R4I"/>
-                        </connections>
-                    </collectionView>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3qs-Le-kEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2393" y="-523"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
+        <image name="border_big.png" width="856" height="460"/>
+        <image name="border_small_1.png" width="280" height="260"/>
+        <image name="border_small_2.png" width="280" height="260"/>
+        <image name="border_small_3.png" width="280" height="260"/>
+        <image name="crocodile_tail.png" width="230" height="210"/>
+        <image name="rabbit.png" width="806" height="410"/>
+        <image name="rabbit_tail.png" width="230" height="210"/>
+        <image name="turkey_tail.png" width="230" height="210"/>
     </resources>
     <classes>
         <class className="NSLayoutConstraint" superclassName="NSObject">
@@ -384,14 +409,8 @@
         <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
         </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="UIStoryboardSegue" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
@@ -411,10 +430,6 @@
         </class>
         <class className="WZMMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMMainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="selectLevel:"/>
-                <relationship kind="action" name="unwindToMain:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

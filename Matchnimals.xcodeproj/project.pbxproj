@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E237B0A175232940015B5C6 /* border_big.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E237B06175232940015B5C6 /* border_big.png */; };
+		2E237B0B175232940015B5C6 /* border_small_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E237B07175232940015B5C6 /* border_small_1.png */; };
+		2E237B0C175232940015B5C6 /* border_small_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E237B08175232940015B5C6 /* border_small_2.png */; };
+		2E237B0D175232940015B5C6 /* border_small_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E237B09175232940015B5C6 /* border_small_3.png */; };
+		2E237B111753B7B90015B5C6 /* WZMGameControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B101753B7B90015B5C6 /* WZMGameControllerTests.m */; };
+		2E237B151753B8F40015B5C6 /* WZMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B141753B8F40015B5C6 /* WZMGameController.m */; };
+		2E5D7FCD1746BD7200729716 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D7FCC1746BD7200729716 /* Images */; };
+		2E5D7FCE1748055200729716 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D7FC81740024200729716 /* Images */; };
+		2EC7B5E41739539400214975 /* Credits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5E31739539400214975 /* Credits.plist */; };
+		2EC7B5E71739549200214975 /* WZMDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5E61739549200214975 /* WZMDataTests.m */; };
+		2EC7B5ED173AB13B00214975 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5EC173AB13B00214975 /* TestData.plist */; };
+		2EC7B5F0173C3DB600214975 /* WZMGamePlayViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B5EF173C3DB600214975 /* WZMGamePlayViewControllerTests.m */; };
+		2EC7B611173EC03D00214975 /* WZMGameRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B610173EC03D00214975 /* WZMGameRound.m */; };
+		2EC7B614173EC0DC00214975 /* WZMGameRoundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EC7B613173EC0DC00214975 /* WZMGameRoundTests.m */; };
 		2ECA6013171B024D00F55660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6012171B024D00F55660 /* UIKit.framework */; };
 		2ECA6015171B024D00F55660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6014171B024D00F55660 /* Foundation.framework */; };
 		2ECA6017171B024D00F55660 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6016171B024D00F55660 /* CoreGraphics.framework */; };
@@ -22,7 +36,6 @@
 		2ECA6038171B024E00F55660 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6012171B024D00F55660 /* UIKit.framework */; };
 		2ECA6039171B024E00F55660 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA6014171B024D00F55660 /* Foundation.framework */; };
 		2ECA6041171B024E00F55660 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2ECA603F171B024E00F55660 /* InfoPlist.strings */; };
-		2ECA6044171B024E00F55660 /* MatchnimalsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECA6043171B024E00F55660 /* MatchnimalsTests.m */; };
 		2ECA604F171B033E00F55660 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ECA604E171B033E00F55660 /* libOCMock.a */; };
 		2ED449B41726E5B700A2E320 /* WZMGameWinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED449B31726E5B700A2E320 /* WZMGameWinViewController.m */; };
 		2ED449BB1727177300A2E320 /* WZMGamePlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED449B91727177300A2E320 /* WZMGamePlayViewController.m */; };
@@ -40,6 +53,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E237B06175232940015B5C6 /* border_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border_big.png; sourceTree = "<group>"; };
+		2E237B07175232940015B5C6 /* border_small_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border_small_1.png; sourceTree = "<group>"; };
+		2E237B08175232940015B5C6 /* border_small_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border_small_2.png; sourceTree = "<group>"; };
+		2E237B09175232940015B5C6 /* border_small_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = border_small_3.png; sourceTree = "<group>"; };
+		2E237B0F1753B7B90015B5C6 /* WZMGameControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameControllerTests.h; sourceTree = "<group>"; };
+		2E237B101753B7B90015B5C6 /* WZMGameControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameControllerTests.m; sourceTree = "<group>"; };
+		2E237B121753B8B20015B5C6 /* WZMGameControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameControllerDataSource.h; sourceTree = "<group>"; };
+		2E237B131753B8F40015B5C6 /* WZMGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameController.h; sourceTree = "<group>"; };
+		2E237B141753B8F40015B5C6 /* WZMGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameController.m; sourceTree = "<group>"; };
+		2E237B161753BA250015B5C6 /* WZMGameControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameControllerDelegate.h; sourceTree = "<group>"; };
+		2E5D7FC81740024200729716 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		2E5D7FCC1746BD7200729716 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
+		2EC7B5E31739539400214975 /* Credits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credits.plist; sourceTree = "<group>"; };
+		2EC7B5E51739549200214975 /* WZMDataTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMDataTests.h; sourceTree = "<group>"; };
+		2EC7B5E61739549200214975 /* WZMDataTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMDataTests.m; sourceTree = "<group>"; };
+		2EC7B5EC173AB13B00214975 /* TestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestData.plist; sourceTree = "<group>"; };
+		2EC7B5EE173C3DB600214975 /* WZMGamePlayViewControllerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGamePlayViewControllerTests.h; sourceTree = "<group>"; };
+		2EC7B5EF173C3DB600214975 /* WZMGamePlayViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGamePlayViewControllerTests.m; sourceTree = "<group>"; };
+		2EC7B5FD173E7E9800214975 /* WZMGamePlayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGamePlayDataSource.h; sourceTree = "<group>"; };
+		2EC7B60F173EC03D00214975 /* WZMGameRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameRound.h; sourceTree = "<group>"; };
+		2EC7B610173EC03D00214975 /* WZMGameRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameRound.m; sourceTree = "<group>"; };
+		2EC7B612173EC0DC00214975 /* WZMGameRoundTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameRoundTests.h; sourceTree = "<group>"; };
+		2EC7B613173EC0DC00214975 /* WZMGameRoundTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameRoundTests.m; sourceTree = "<group>"; };
 		2ECA600F171B024D00F55660 /* Matchnimals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchnimals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECA6012171B024D00F55660 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2ECA6014171B024D00F55660 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -60,8 +96,6 @@
 		2ECA6036171B024E00F55660 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		2ECA603E171B024E00F55660 /* MatchnimalsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MatchnimalsTests-Info.plist"; sourceTree = "<group>"; };
 		2ECA6040171B024E00F55660 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2ECA6042171B024E00F55660 /* MatchnimalsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MatchnimalsTests.h; sourceTree = "<group>"; };
-		2ECA6043171B024E00F55660 /* MatchnimalsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MatchnimalsTests.m; sourceTree = "<group>"; };
 		2ECA604E171B033E00F55660 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOCMock.a; sourceTree = "<group>"; };
 		2ECA6051171B034D00F55660 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
 		2ECA6052171B034D00F55660 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
@@ -102,6 +136,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E237B0E1753B6640015B5C6 /* UI Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E237B06175232940015B5C6 /* border_big.png */,
+				2E237B07175232940015B5C6 /* border_small_1.png */,
+				2E237B08175232940015B5C6 /* border_small_2.png */,
+				2E237B09175232940015B5C6 /* border_small_3.png */,
+			);
+			name = "UI Images";
+			sourceTree = "<group>";
+		};
 		2ECA6006171B024D00F55660 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +181,8 @@
 		2ECA6018171B024D00F55660 /* Matchnimals */ = {
 			isa = PBXGroup;
 			children = (
+				2E237B0E1753B6640015B5C6 /* UI Images */,
+				2E5D7FCC1746BD7200729716 /* Images */,
 				2ECA6021171B024D00F55660 /* WZMAppDelegate.h */,
 				2ECA6022171B024D00F55660 /* WZMAppDelegate.m */,
 				2ECA602A171B024D00F55660 /* MainStoryboard.storyboard */,
@@ -148,6 +195,14 @@
 				2ED449B91727177300A2E320 /* WZMGamePlayViewController.m */,
 				2ED449C3172AD1E800A2E320 /* WZMCreditsViewController.h */,
 				2ED449C4172AD1E800A2E320 /* WZMCreditsViewController.m */,
+				2EC7B5E31739539400214975 /* Credits.plist */,
+				2EC7B5FD173E7E9800214975 /* WZMGamePlayDataSource.h */,
+				2EC7B60F173EC03D00214975 /* WZMGameRound.h */,
+				2EC7B610173EC03D00214975 /* WZMGameRound.m */,
+				2E237B121753B8B20015B5C6 /* WZMGameControllerDataSource.h */,
+				2E237B131753B8F40015B5C6 /* WZMGameController.h */,
+				2E237B141753B8F40015B5C6 /* WZMGameController.m */,
+				2E237B161753BA250015B5C6 /* WZMGameControllerDelegate.h */,
 			);
 			path = Matchnimals;
 			sourceTree = "<group>";
@@ -169,9 +224,17 @@
 		2ECA603C171B024E00F55660 /* MatchnimalsTests */ = {
 			isa = PBXGroup;
 			children = (
-				2ECA6042171B024E00F55660 /* MatchnimalsTests.h */,
-				2ECA6043171B024E00F55660 /* MatchnimalsTests.m */,
+				2E5D7FC81740024200729716 /* Images */,
 				2ECA603D171B024E00F55660 /* Supporting Files */,
+				2EC7B5E51739549200214975 /* WZMDataTests.h */,
+				2EC7B5E61739549200214975 /* WZMDataTests.m */,
+				2EC7B5EC173AB13B00214975 /* TestData.plist */,
+				2EC7B5EE173C3DB600214975 /* WZMGamePlayViewControllerTests.h */,
+				2EC7B5EF173C3DB600214975 /* WZMGamePlayViewControllerTests.m */,
+				2EC7B612173EC0DC00214975 /* WZMGameRoundTests.h */,
+				2EC7B613173EC0DC00214975 /* WZMGameRoundTests.m */,
+				2E237B0F1753B7B90015B5C6 /* WZMGameControllerTests.h */,
+				2E237B101753B7B90015B5C6 /* WZMGameControllerTests.m */,
 			);
 			path = MatchnimalsTests;
 			sourceTree = "<group>";
@@ -284,6 +347,12 @@
 				2ECA6027171B024D00F55660 /* Default@2x.png in Resources */,
 				2ECA6029171B024D00F55660 /* Default-568h@2x.png in Resources */,
 				2ECA602C171B024D00F55660 /* MainStoryboard.storyboard in Resources */,
+				2EC7B5E41739539400214975 /* Credits.plist in Resources */,
+				2E5D7FCD1746BD7200729716 /* Images in Resources */,
+				2E237B0A175232940015B5C6 /* border_big.png in Resources */,
+				2E237B0B175232940015B5C6 /* border_small_1.png in Resources */,
+				2E237B0C175232940015B5C6 /* border_small_2.png in Resources */,
+				2E237B0D175232940015B5C6 /* border_small_3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +361,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2ECA6041171B024E00F55660 /* InfoPlist.strings in Resources */,
+				2EC7B5ED173AB13B00214975 /* TestData.plist in Resources */,
+				2E5D7FCE1748055200729716 /* Images in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +395,8 @@
 				2ED449B41726E5B700A2E320 /* WZMGameWinViewController.m in Sources */,
 				2ED449BB1727177300A2E320 /* WZMGamePlayViewController.m in Sources */,
 				2ED449C5172AD1E800A2E320 /* WZMCreditsViewController.m in Sources */,
+				2EC7B611173EC03D00214975 /* WZMGameRound.m in Sources */,
+				2E237B151753B8F40015B5C6 /* WZMGameController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +404,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2ECA6044171B024E00F55660 /* MatchnimalsTests.m in Sources */,
+				2EC7B5E71739549200214975 /* WZMDataTests.m in Sources */,
+				2EC7B5F0173C3DB600214975 /* WZMGamePlayViewControllerTests.m in Sources */,
+				2EC7B614173EC0DC00214975 /* WZMGameRoundTests.m in Sources */,
+				2E237B111753B7B90015B5C6 /* WZMGameControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

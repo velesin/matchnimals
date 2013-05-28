@@ -1,13 +1,13 @@
 //
-//  MatchnimalsTests.h
-//  MatchnimalsTests
+//  WZMDataTests.h
+//  Matchnimals
 //
-//  Created by Wojtek on 4/14/13.
+//  Created by Wojtek on 5/7/13.
 //  Copyright (c) 2013 Wojciech Zawistowski. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MatchnimalsTests : SenTestCase
+@interface WZMDataTests : SenTestCase
 
 @end

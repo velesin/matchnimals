@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WZMGamePlayDataSource.h"
 
 @interface WZMGamePlayViewController : UIViewController
+
+@property id<WZMGamePlayDataSource> dataSource;
+
+- (IBAction)answer:(id)sender;
 
 @end
