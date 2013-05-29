@@ -13,6 +13,8 @@
 		2E237B0D175232940015B5C6 /* border_small_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E237B09175232940015B5C6 /* border_small_3.png */; };
 		2E237B111753B7B90015B5C6 /* WZMGameControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B101753B7B90015B5C6 /* WZMGameControllerTests.m */; };
 		2E237B151753B8F40015B5C6 /* WZMGameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B141753B8F40015B5C6 /* WZMGameController.m */; };
+		2E237B191755355A0015B5C6 /* WZMArrayRandomizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B181755355A0015B5C6 /* WZMArrayRandomizer.m */; };
+		2E237B1C1755385D0015B5C6 /* WZMArrayRandomizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E237B1B1755385D0015B5C6 /* WZMArrayRandomizerTests.m */; };
 		2E5D7FCD1746BD7200729716 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D7FCC1746BD7200729716 /* Images */; };
 		2E5D7FCE1748055200729716 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 2E5D7FC81740024200729716 /* Images */; };
 		2EC7B5E41739539400214975 /* Credits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EC7B5E31739539400214975 /* Credits.plist */; };
@@ -63,6 +65,10 @@
 		2E237B131753B8F40015B5C6 /* WZMGameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameController.h; sourceTree = "<group>"; };
 		2E237B141753B8F40015B5C6 /* WZMGameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMGameController.m; sourceTree = "<group>"; };
 		2E237B161753BA250015B5C6 /* WZMGameControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMGameControllerDelegate.h; sourceTree = "<group>"; };
+		2E237B171755355A0015B5C6 /* WZMArrayRandomizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMArrayRandomizer.h; sourceTree = "<group>"; };
+		2E237B181755355A0015B5C6 /* WZMArrayRandomizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMArrayRandomizer.m; sourceTree = "<group>"; };
+		2E237B1A1755385D0015B5C6 /* WZMArrayRandomizerTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZMArrayRandomizerTests.h; sourceTree = "<group>"; };
+		2E237B1B1755385D0015B5C6 /* WZMArrayRandomizerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZMArrayRandomizerTests.m; sourceTree = "<group>"; };
 		2E5D7FC81740024200729716 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		2E5D7FCC1746BD7200729716 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Images; sourceTree = "<group>"; };
 		2EC7B5E31739539400214975 /* Credits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Credits.plist; sourceTree = "<group>"; };
@@ -203,6 +209,8 @@
 				2E237B131753B8F40015B5C6 /* WZMGameController.h */,
 				2E237B141753B8F40015B5C6 /* WZMGameController.m */,
 				2E237B161753BA250015B5C6 /* WZMGameControllerDelegate.h */,
+				2E237B171755355A0015B5C6 /* WZMArrayRandomizer.h */,
+				2E237B181755355A0015B5C6 /* WZMArrayRandomizer.m */,
 			);
 			path = Matchnimals;
 			sourceTree = "<group>";
@@ -235,6 +243,8 @@
 				2EC7B613173EC0DC00214975 /* WZMGameRoundTests.m */,
 				2E237B0F1753B7B90015B5C6 /* WZMGameControllerTests.h */,
 				2E237B101753B7B90015B5C6 /* WZMGameControllerTests.m */,
+				2E237B1A1755385D0015B5C6 /* WZMArrayRandomizerTests.h */,
+				2E237B1B1755385D0015B5C6 /* WZMArrayRandomizerTests.m */,
 			);
 			path = MatchnimalsTests;
 			sourceTree = "<group>";
@@ -397,6 +407,7 @@
 				2ED449C5172AD1E800A2E320 /* WZMCreditsViewController.m in Sources */,
 				2EC7B611173EC03D00214975 /* WZMGameRound.m in Sources */,
 				2E237B151753B8F40015B5C6 /* WZMGameController.m in Sources */,
+				2E237B191755355A0015B5C6 /* WZMArrayRandomizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,6 +419,7 @@
 				2EC7B5F0173C3DB600214975 /* WZMGamePlayViewControllerTests.m in Sources */,
 				2EC7B614173EC0DC00214975 /* WZMGameRoundTests.m in Sources */,
 				2E237B111753B7B90015B5C6 /* WZMGameControllerTests.m in Sources */,
+				2E237B1C1755385D0015B5C6 /* WZMArrayRandomizerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
