@@ -1,13 +1,13 @@
 //
-//  WZMDataTests.h
+//  WZMPlistDataReaderTests.h
 //  Matchnimals
 //
-//  Created by Wojtek on 5/7/13.
+//  Created by Wojtek on 5/30/13.
 //  Copyright (c) 2013 Wojciech Zawistowski. All rights reserved.
 //
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface WZMDataTests : SenTestCase
+@interface WZMPlistDataReaderTests : SenTestCase
 
 @end
