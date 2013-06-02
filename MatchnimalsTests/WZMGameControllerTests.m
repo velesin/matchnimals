@@ -24,14 +24,12 @@
 
 - (void)setUp
 {
-    NSArray* round1AnswerImageNames = @[@"a11", @"a12", @"a13"];
     round1 = [[WZMGameRound alloc] initWithQuestionImageName:@"q1"
-                                           answersImageNames:round1AnswerImageNames
+                                           answersImageNames:@[@"a11", @"a12", @"a13"]
                                          correctAnswerNumber:1];
     
-    NSArray* round2AnswerImageNames = @[@"a21", @"a22", @"a23"];
     round2 = [[WZMGameRound alloc] initWithQuestionImageName:@"q2"
-                                           answersImageNames:round2AnswerImageNames
+                                           answersImageNames:@[@"a21", @"a22", @"a23"]
                                          correctAnswerNumber:2];
  
     dataSourceMock = [OCMockObject mockForProtocol:@protocol(WZMGameControllerDataSource)];
