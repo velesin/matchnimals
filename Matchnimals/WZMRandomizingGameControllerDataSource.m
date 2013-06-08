@@ -51,7 +51,7 @@
         NSArray* randomizedWrongQuestionAnswerPairs = [self.arrayHelper shuffleArray:wrongQuestionAnswerPairsPool];
 
         NSArray* selectedWrongQuestionAnswerPairs = [self.arrayHelper first:(self.numberOfAnswers - 1) objectsFromArray:randomizedWrongQuestionAnswerPairs];
-        NSString* wrongAnswerImageNames = [self.arrayHelper mapArray:selectedWrongQuestionAnswerPairs withBlock:^id(NSArray* wrongQuestionAnswerPair) {
+        NSArray* wrongAnswerImageNames = [self.arrayHelper mapArray:selectedWrongQuestionAnswerPairs withBlock:^id(NSArray* wrongQuestionAnswerPair) {
             return wrongQuestionAnswerPair[1];
         }];
         
@@ -71,16 +71,6 @@
 - (NSArray*)randomizedQuestionAnswerPairs
 {
     return [self.arrayHelper shuffleArray:self.questionAnswerPairs];
-}
-
-- (NSArray*)first:(NSInteger)numberOfElements elementsOfArray:(NSArray*)array
-{
-    
-}
-
-- (NSArray*)elementsOfArray:(NSArray*)array withoutTheFirst:(NSInteger)numberOfElements
-{
-    
 }
 
 @end
