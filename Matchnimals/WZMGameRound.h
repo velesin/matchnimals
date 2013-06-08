@@ -10,11 +10,12 @@
 
 @interface WZMGameRound : NSObject
 
-@property (readonly) NSString* imageNameForQuestion;
-@property (readonly) NSInteger correctAnswerNumber;
+@property (nonatomic, retain, readonly) NSString* questionImageName;
+@property (nonatomic, retain, readonly) NSArray* answerImageNames;
+@property (nonatomic, readonly) NSInteger correctAnswerNumber;
 
 - (id)initWithQuestionImageName:(NSString*)questionImageName
-              answersImageNames:(NSArray*)answersImageNames
+              answerImageNames:(NSArray*)answerImageNames
             correctAnswerNumber:(NSInteger)correctAnswerNumber;
 
 - (NSString*)imageNameForAnswer:(NSInteger)answerNumber;

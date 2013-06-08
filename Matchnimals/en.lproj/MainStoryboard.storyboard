@@ -140,10 +140,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="rKV-RG-eVF"/>
                             <imageView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-cA-Ctv">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="yNz-uD-5a3"/>
+                                    <constraint firstAttribute="height" constant="84" id="Lmp-ux-VxT"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="KIS-ks-crr" appends="YES" id="0P8-Hy-Ss8"/>
@@ -168,43 +169,27 @@
                                     <outletCollection property="gestureRecognizers" destination="tIK-Uu-zAi" appends="YES" id="wIR-mB-94Y"/>
                                 </connections>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-KG-dPp">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="nGp-uW-I0z"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-z0-2A6">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Uev-IK-oAa"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-Ji-qcN">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="UjZ-kg-Cns"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-t0-gml">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="pun-gB-cCj"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-vO-u6s">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="VbI-Ak-MgP"/>
-                                </constraints>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_4.png" translatesAutoresizingMaskIntoConstraints="NO" id="uD4-KG-dPp"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="6fi-z0-2A6"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="OM1-Ji-qcN"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-t0-gml"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="aGo-vO-u6s"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_big.png" translatesAutoresizingMaskIntoConstraints="NO" id="EFs-cy-BiU"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yVZ-xJ-vaK"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ejz-zv-HnP"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-ju-fXB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vym-Pt-grQ"/>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.91926292677419974" blue="0.90838343467842553" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="aGo-vO-u6s" firstAttribute="top" secondItem="Vym-Pt-grQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0NC-eH-BaQ"/>
+                            <constraint firstItem="rKV-RG-eVF" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" type="default" id="1V9-nV-ysD"/>
                             <constraint firstItem="yVZ-xJ-vaK" firstAttribute="centerX" secondItem="Qct-Zp-ZrK" secondAttribute="centerX" type="default" id="2hr-AV-6f2"/>
                             <constraint firstItem="W3G-cA-Ctv" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" constant="20" symbolic="YES" type="default" id="39P-gr-Afy"/>
                             <constraint firstItem="uD4-KG-dPp" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="3u6-Ln-lD2"/>
-                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="aGo-vO-u6s" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="3ud-CG-75O"/>
                             <constraint firstItem="6fi-z0-2A6" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="4FE-Cs-vf0"/>
+                            <constraint firstItem="OM1-Ji-qcN" firstAttribute="top" secondItem="UWU-t0-gml" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Blf-Uf-v1V"/>
+                            <constraint firstItem="gVK-ju-fXB" firstAttribute="leading" secondItem="ejz-zv-HnP" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="C58-eD-Czn"/>
                             <constraint firstAttribute="trailing" secondItem="EFs-cy-BiU" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="CmC-bB-Cyf"/>
                             <constraint firstItem="UWU-t0-gml" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="DLD-1C-1pt"/>
                             <constraint firstItem="W3G-cA-Ctv" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="E5X-an-2tl"/>
@@ -214,25 +199,21 @@
                             <constraint firstItem="ww7-d1-g2y" firstAttribute="trailing" secondItem="whT-8G-i23" secondAttribute="trailing" type="default" id="Ind-Vp-OA5"/>
                             <constraint firstItem="whT-8G-i23" firstAttribute="centerY" secondItem="EFs-cy-BiU" secondAttribute="centerY" type="default" id="IpJ-q1-2yQ"/>
                             <constraint firstItem="ejz-zv-HnP" firstAttribute="leading" secondItem="yVZ-xJ-vaK" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Ixu-vj-hzT"/>
-                            <constraint firstItem="6fi-z0-2A6" firstAttribute="top" secondItem="OM1-Ji-qcN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Jay-Ho-dBi"/>
                             <constraint firstItem="Qct-Zp-ZrK" firstAttribute="centerY" secondItem="yVZ-xJ-vaK" secondAttribute="centerY" type="default" id="K1Y-79-YCM"/>
                             <constraint firstItem="IIi-8O-Tk9" firstAttribute="centerX" secondItem="ejz-zv-HnP" secondAttribute="centerX" type="default" id="KEK-sG-Kwx"/>
+                            <constraint firstItem="6fi-z0-2A6" firstAttribute="top" secondItem="OM1-Ji-qcN" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="KOG-Jh-CEL"/>
                             <constraint firstItem="OM1-Ji-qcN" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KXC-hc-BDh"/>
-                            <constraint firstItem="UWU-t0-gml" firstAttribute="top" secondItem="aGo-vO-u6s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QZO-qc-rzl"/>
-                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="uD4-KG-dPp" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="RmX-7H-gaI"/>
-                            <constraint firstAttribute="bottom" secondItem="uD4-KG-dPp" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="ScK-il-Cg9"/>
                             <constraint firstAttribute="bottom" secondItem="gVK-ju-fXB" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="TFO-WS-YuO"/>
-                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="W3G-cA-Ctv" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="VMh-B6-3bc"/>
-                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="UWU-t0-gml" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cvh-XN-p1c"/>
-                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="OM1-Ji-qcN" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ebf-iJ-ssJ"/>
+                            <constraint firstItem="Vym-Pt-grQ" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" constant="200" id="Vrz-Kx-EuB"/>
+                            <constraint firstItem="Vym-Pt-grQ" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aqs-il-SQ1"/>
+                            <constraint firstItem="UWU-t0-gml" firstAttribute="top" secondItem="aGo-vO-u6s" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="dQw-Gb-fGj"/>
+                            <constraint firstItem="rKV-RG-eVF" firstAttribute="top" secondItem="6H1-le-0jN" secondAttribute="top" type="default" id="g0h-mC-uCJ"/>
                             <constraint firstItem="ww7-d1-g2y" firstAttribute="top" secondItem="IIi-8O-Tk9" secondAttribute="top" type="default" id="gQP-lr-6OP"/>
                             <constraint firstAttribute="bottom" secondItem="ejz-zv-HnP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="iY0-8c-23y"/>
-                            <constraint firstItem="EFs-cy-BiU" firstAttribute="leading" secondItem="OM1-Ji-qcN" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="j1X-hG-dnY"/>
-                            <constraint firstItem="OM1-Ji-qcN" firstAttribute="top" secondItem="UWU-t0-gml" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="mWI-6M-lJV"/>
-                            <constraint firstItem="uD4-KG-dPp" firstAttribute="top" secondItem="6fi-z0-2A6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="oQy-RZ-zT6"/>
+                            <constraint firstItem="Vym-Pt-grQ" firstAttribute="trailing" secondItem="W3G-cA-Ctv" secondAttribute="trailing" type="default" id="jB5-zf-JSm"/>
                             <constraint firstItem="Qct-Zp-ZrK" firstAttribute="top" secondItem="IIi-8O-Tk9" secondAttribute="top" type="default" id="qET-I2-dub"/>
                             <constraint firstAttribute="bottom" secondItem="yVZ-xJ-vaK" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="r6G-Tb-C9y"/>
-                            <constraint firstItem="yVZ-xJ-vaK" firstAttribute="leading" secondItem="6fi-z0-2A6" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="sn2-6f-goW"/>
+                            <constraint firstItem="uD4-KG-dPp" firstAttribute="top" secondItem="6fi-z0-2A6" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="s9B-m7-lFb"/>
                             <constraint firstAttribute="trailing" secondItem="gVK-ju-fXB" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="xRv-bR-rfA"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -390,6 +371,7 @@
     </scenes>
     <resources>
         <image name="Default.png" width="320" height="480"/>
+        <image name="background.png" width="1024" height="768"/>
         <image name="border_big.png" width="856" height="460"/>
         <image name="border_small_1.png" width="280" height="260"/>
         <image name="border_small_2.png" width="280" height="260"/>
@@ -397,8 +379,57 @@
         <image name="crocodile_tail.png" width="230" height="210"/>
         <image name="rabbit.png" width="806" height="410"/>
         <image name="rabbit_tail.png" width="230" height="210"/>
+        <image name="star_1.png" width="88" height="84"/>
+        <image name="star_2.png" width="88" height="84"/>
+        <image name="star_3.png" width="88" height="84"/>
+        <image name="star_4.png" width="88" height="84"/>
+        <image name="star_empty.png" width="88" height="84"/>
         <image name="turkey_tail.png" width="230" height="210"/>
     </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+        <class className="WZMCreditsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMCreditsViewController.h"/>
+        </class>
+        <class className="WZMGamePlayViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMGamePlayViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="answer:"/>
+                <relationship kind="action" name="playAgain:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="outlet" name="_answer1ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="_answer2ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="_answer3ImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="_questionImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="WZMGameWinViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMGameWinViewController.h"/>
+        </class>
+        <class className="WZMMainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="selectLevel:"/>
+                <relationship kind="action" name="unwindToMain:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

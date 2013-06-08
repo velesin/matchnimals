@@ -3,38 +3,28 @@
 <plist version="1.0">
 <array>
 	<array>
-		<dict>
-			<key>questionImageName</key>
+		<array>
 			<string>q11</string>
-			<key>answerImageName</key>
 			<string>a11</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>q12</string>
-			<key>answerImageName</key>
 			<string>a12</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>q13</string>
-			<key>answerImageName</key>
 			<string>a13</string>
-		</dict>
+		</array>
 	</array>
 	<array>
-		<dict>
-			<key>questionImageName</key>
+		<array>
 			<string>q21</string>
-			<key>answerImageName</key>
 			<string>a21</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>q22</string>
-			<key>answerImageName</key>
 			<string>a22</string>
-		</dict>
+		</array>
 	</array>
 </array>
 </plist>

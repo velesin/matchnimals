@@ -69,7 +69,7 @@
 {
     WZMGameRound* currentRound = [self currentRound];
     
-    _questionImageView.image = [self imageNamed:[currentRound imageNameForQuestion]];
+    _questionImageView.image = [self imageNamed:[currentRound questionImageName]];
     _answer1ImageView.image = [self imageNamed:[currentRound imageNameForAnswer:1]];
     _answer2ImageView.image = [self imageNamed:[currentRound imageNameForAnswer:2]];
     _answer3ImageView.image = [self imageNamed:[currentRound imageNameForAnswer:3]];

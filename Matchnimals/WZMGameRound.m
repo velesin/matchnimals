@@ -9,19 +9,16 @@
 #import "WZMGameRound.h"
 
 @implementation WZMGameRound
-{
-    NSArray* _answersImageNames;
-}
 
 - (id)initWithQuestionImageName:(NSString*)questionImageName
-              answersImageNames:(NSArray*)answersImageNames
+              answerImageNames:(NSArray*)answerImageNames
             correctAnswerNumber:(NSInteger)correctAnswerNumber
 {
     self = [super init];
     
     if (self) {
-        _imageNameForQuestion = questionImageName;
-        _answersImageNames = answersImageNames;
+        _questionImageName = questionImageName;
+        _answerImageNames = answerImageNames;
         _correctAnswerNumber = correctAnswerNumber;
     }
     
@@ -30,7 +27,7 @@
 
 - (NSString*)imageNameForAnswer:(NSInteger)answerNumber
 {
-    return _answersImageNames[answerNumber - 1];
+    return self.answerImageNames[answerNumber - 1];
 }
 
 @end

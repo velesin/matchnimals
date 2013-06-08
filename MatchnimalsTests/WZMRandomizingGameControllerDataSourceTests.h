@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface WZMGameControllerPlistDataSourceTests : SenTestCase
+@interface WZMRandomizingGameControllerDataSourceTests : SenTestCase
 
 @end

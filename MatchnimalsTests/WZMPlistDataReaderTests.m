@@ -20,19 +20,15 @@
     WZMPlistDataReader* reader = [[WZMPlistDataReader alloc] init];
     
     NSArray* expectedLevel1Data = @[
-                                    @{@"questionImageName": @"q11",
-                                      @"answerImageName": @"a11",},
-                                    @{@"questionImageName": @"q12",
-                                      @"answerImageName": @"a12",},
-                                    @{@"questionImageName": @"q13",
-                                      @"answerImageName": @"a13",},
+                                    @[@"q11", @"a11"],
+                                    @[@"q12", @"a12"],
+                                    @[@"q13", @"a13"],
                                     ];
     NSArray* expectedLevel2Data = @[
-                                    @{@"questionImageName": @"q21",
-                                      @"answerImageName": @"a21",},
-                                    @{@"questionImageName": @"q22",
-                                      @"answerImageName": @"a22",},
+                                    @[@"q21", @"a21"],
+                                    @[@"q22", @"a22"],
                                     ];
+    
     NSArray* actualLevel1Data = [reader questionAnswerPairsForLevel:1];
     NSArray* actualLevel2Data = [reader questionAnswerPairsForLevel:2];
     

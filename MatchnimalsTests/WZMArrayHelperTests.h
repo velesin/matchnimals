@@ -8,6 +8,6 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface WZMArrayRandomizerTests : SenTestCase
+@interface WZMArrayHelperTests : SenTestCase
 
 @end

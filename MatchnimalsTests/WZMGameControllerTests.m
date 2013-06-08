@@ -25,11 +25,11 @@
 - (void)setUp
 {
     round1 = [[WZMGameRound alloc] initWithQuestionImageName:@"q1"
-                                           answersImageNames:@[@"a11", @"a12", @"a13"]
+                                           answerImageNames:@[@"a11", @"a12", @"a13"]
                                          correctAnswerNumber:1];
     
     round2 = [[WZMGameRound alloc] initWithQuestionImageName:@"q2"
-                                           answersImageNames:@[@"a21", @"a22", @"a23"]
+                                           answerImageNames:@[@"a21", @"a22", @"a23"]
                                          correctAnswerNumber:2];
  
     dataSourceMock = [OCMockObject mockForProtocol:@protocol(WZMGameControllerDataSource)];

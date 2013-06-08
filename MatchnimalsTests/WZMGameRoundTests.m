@@ -14,30 +14,35 @@
     WZMGameRound* gamePlayRound;
     
     NSString* questionImageNameFixture;
-    NSArray* answersImageNamesFixture;
+    NSArray* answerImageNamesFixture;
     NSInteger correctAnswerNumberFixture;
 }
 
 - (void)setUp
 {
     questionImageNameFixture = @"question image name";
-    answersImageNamesFixture = @[@"answer image name 1", @"answer image name 2"];
+    answerImageNamesFixture = @[@"answer image name 1", @"answer image name 2"];
     correctAnswerNumberFixture = 1;
     
     gamePlayRound = [[WZMGameRound alloc] initWithQuestionImageName:questionImageNameFixture
-                                              answersImageNames:answersImageNamesFixture
+                                              answerImageNames:answerImageNamesFixture
                                             correctAnswerNumber:correctAnswerNumberFixture];
 }
 
 - (void)test_that_questionImageName_returns_correct_value
 {
-    STAssertEqualObjects([gamePlayRound imageNameForQuestion], questionImageNameFixture, nil);
+    STAssertEqualObjects([gamePlayRound questionImageName], questionImageNameFixture, nil);
+}
+
+- (void)test_that_answerImageNames_returns_correct_value
+{
+    STAssertEqualObjects([gamePlayRound answerImageNames], answerImageNamesFixture, nil);
 }
 
 - (void)test_that_imageNameForAnswer_returns_correct_image_names_indexed_from_one
 {
-    STAssertEqualObjects([gamePlayRound imageNameForAnswer:1], answersImageNamesFixture[0], nil);
-    STAssertEqualObjects([gamePlayRound imageNameForAnswer:2], answersImageNamesFixture[1], nil);
+    STAssertEqualObjects([gamePlayRound imageNameForAnswer:1], answerImageNamesFixture[0], nil);
+    STAssertEqualObjects([gamePlayRound imageNameForAnswer:2], answerImageNamesFixture[1], nil);
 }
 
 - (void)test_that_imageNameForAnswer_throws_exception_when_requested_answer_number_exceeds_number_of_answers
