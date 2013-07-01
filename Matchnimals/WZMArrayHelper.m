@@ -10,6 +10,16 @@
 
 @implementation WZMArrayHelper
 
+static WZMArrayHelper* _sharedInstance;
+
++ (WZMArrayHelper*)sharedInstance
+{
+    if (!_sharedInstance) {
+        _sharedInstance = [[WZMArrayHelper alloc] init];
+    }
+    return _sharedInstance;
+}
+
 - (NSArray*)shuffleArray:(NSArray*)array
 {
     NSMutableArray* tmpArray = [NSMutableArray arrayWithArray:array];

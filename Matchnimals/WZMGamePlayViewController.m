@@ -8,6 +8,7 @@
 
 #import "WZMGamePlayViewController.h"
 #import "WZMGameRound.h"
+#import "WZMGameController.h"
 
 @interface WZMGamePlayViewController ()
 

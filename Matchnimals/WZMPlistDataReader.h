@@ -10,6 +10,8 @@
 
 @interface WZMPlistDataReader : NSObject
 
++ (WZMPlistDataReader*)sharedInstance;
+
 - (NSArray*)questionAnswerPairsForLevel:(NSInteger)levelNumber;
 
 @end

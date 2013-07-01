@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "WZMGamePlayDataSource.h"
+@class WZMGameController;
 
 @interface WZMGamePlayViewController : UIViewController
 
+@property (nonatomic, retain) WZMGameController* gameController;
 @property id<WZMGamePlayDataSource> dataSource;
 
 - (IBAction)answer:(id)sender;

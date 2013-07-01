@@ -180,7 +180,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="border_small_3.png" translatesAutoresizingMaskIntoConstraints="NO" id="gVK-ju-fXB"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="star_empty.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vym-Pt-grQ"/>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.91926292677419974" blue="0.90838343467842553" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="aGo-vO-u6s" firstAttribute="top" secondItem="Vym-Pt-grQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="0NC-eH-BaQ"/>
                             <constraint firstItem="rKV-RG-eVF" firstAttribute="leading" secondItem="6H1-le-0jN" secondAttribute="leading" type="default" id="1V9-nV-ysD"/>
@@ -264,11 +264,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="maC-t9-8ZM"/>
                             <imageView contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="HlF-co-w22">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="4AB-LI-BLm"/>
-                                    <constraint firstAttribute="width" constant="133" id="GsE-Mx-3Hn"/>
+                                    <constraint firstAttribute="width" constant="88" id="JCB-fc-aLM"/>
+                                    <constraint firstAttribute="height" constant="84" id="Ye8-DC-hL7"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="va3-A9-nCU" appends="YES" id="Ag8-I1-XMw"/>
@@ -277,26 +278,17 @@
                             <imageView tag="1" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lar-Pb-wmy">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="suA-sM-hIO"/>
+                                    <constraint firstAttribute="width" constant="280" id="9hj-N0-Std"/>
+                                    <constraint firstAttribute="height" constant="260" id="plG-fM-z5k"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="tcF-ia-7Eo" appends="YES" id="a9O-Ve-YoN"/>
                                 </connections>
                             </imageView>
-                            <imageView multipleTouchEnabled="YES" tag="4" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="tb2-tP-Mni">
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="LEX-Ve-Mtp"/>
-                                </constraints>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="zon-KQ-LQf" appends="YES" id="jkr-hv-WsK"/>
-                                </connections>
-                            </imageView>
                             <imageView tag="2" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="fbJ-wb-em2">
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="A1U-5A-TcB"/>
-                                    <constraint firstAttribute="width" constant="240" id="YjZ-S6-sjn"/>
+                                    <constraint firstAttribute="width" constant="280" id="Yze-Y2-6ra"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="sGJ-em-ewS" appends="YES" id="UA9-zN-zxt"/>
@@ -304,9 +296,6 @@
                             </imageView>
                             <imageView tag="3" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="A0Y-zW-AMn">
                                 <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="bWk-Lk-VFt"/>
-                                </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="UF6-Gp-k4s" appends="YES" id="P88-CD-WBx"/>
                                 </connections>
@@ -314,19 +303,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="A0Y-zW-AMn" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="509" id="8uZ-LI-WNB"/>
-                            <constraint firstItem="A0Y-zW-AMn" firstAttribute="bottom" secondItem="fbJ-wb-em2" secondAttribute="bottom" type="default" id="Evl-mt-Ic9"/>
-                            <constraint firstItem="A0Y-zW-AMn" firstAttribute="leading" secondItem="fbJ-wb-em2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="HCF-Ib-BR8"/>
-                            <constraint firstItem="HlF-co-w22" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="OFZ-la-oBj"/>
-                            <constraint firstAttribute="bottom" secondItem="tb2-tP-Mni" secondAttribute="bottom" constant="174" id="Pq6-sk-2aJ"/>
-                            <constraint firstItem="tb2-tP-Mni" firstAttribute="bottom" secondItem="A0Y-zW-AMn" secondAttribute="bottom" type="default" id="QI3-Je-Uhe"/>
-                            <constraint firstItem="tb2-tP-Mni" firstAttribute="top" secondItem="A0Y-zW-AMn" secondAttribute="top" type="default" id="Qo5-je-7tt"/>
-                            <constraint firstAttribute="trailing" secondItem="tb2-tP-Mni" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="R38-vN-DjH"/>
-                            <constraint firstItem="A0Y-zW-AMn" firstAttribute="top" secondItem="fbJ-wb-em2" secondAttribute="top" type="default" id="YJu-aH-P0h"/>
-                            <constraint firstItem="fbJ-wb-em2" firstAttribute="bottom" secondItem="Lar-Pb-wmy" secondAttribute="bottom" type="default" id="dCo-BH-Ydw"/>
-                            <constraint firstItem="fbJ-wb-em2" firstAttribute="leading" secondItem="Lar-Pb-wmy" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ihM-fr-rd4"/>
-                            <constraint firstItem="fbJ-wb-em2" firstAttribute="top" secondItem="Lar-Pb-wmy" secondAttribute="top" type="default" id="reU-CY-bFQ"/>
-                            <constraint firstItem="HlF-co-w22" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="yfP-Z9-6oo"/>
+                            <constraint firstAttribute="bottom" secondItem="fbJ-wb-em2" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1Vm-KC-1Hh"/>
+                            <constraint firstItem="maC-t9-8ZM" firstAttribute="top" secondItem="5" secondAttribute="top" type="default" id="1pf-yy-XkX"/>
+                            <constraint firstItem="fbJ-wb-em2" firstAttribute="top" secondItem="A0Y-zW-AMn" secondAttribute="top" type="default" id="2LQ-9Q-kCE"/>
+                            <constraint firstAttribute="bottom" secondItem="Lar-Pb-wmy" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="J4z-ME-RlN"/>
+                            <constraint firstAttribute="trailing" secondItem="HlF-co-w22" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="JCC-MH-H5x"/>
+                            <constraint firstItem="HlF-co-w22" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="QDu-xw-xzZ"/>
+                            <constraint firstItem="Lar-Pb-wmy" firstAttribute="top" secondItem="fbJ-wb-em2" secondAttribute="top" type="default" id="SZ8-8N-Nmh"/>
+                            <constraint firstItem="Lar-Pb-wmy" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="148" id="X3M-pd-7Gp"/>
+                            <constraint firstItem="A0Y-zW-AMn" firstAttribute="leading" secondItem="fbJ-wb-em2" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Xlf-02-2bM"/>
+                            <constraint firstAttribute="bottom" secondItem="A0Y-zW-AMn" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="dj3-Uc-Xft"/>
+                            <constraint firstAttribute="trailing" secondItem="A0Y-zW-AMn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fx8-rY-wsP"/>
+                            <constraint firstItem="fbJ-wb-em2" firstAttribute="leading" secondItem="Lar-Pb-wmy" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="lv0-LM-0ke"/>
+                            <constraint firstItem="maC-t9-8ZM" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="slE-mr-BbA"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -358,11 +347,6 @@
                 <tapGestureRecognizer id="UF6-Gp-k4s" userLabel="Level 3">
                     <connections>
                         <action selector="selectLevel:" destination="2" id="fGd-Ik-r29"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <tapGestureRecognizer id="zon-KQ-LQf" userLabel="Level 4">
-                    <connections>
-                        <action selector="selectLevel:" destination="2" id="oN1-ER-zop"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -402,9 +386,6 @@
         <class className="UICollectionViewLayout" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
         <class className="WZMCreditsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMCreditsViewController.h"/>
         </class>
@@ -412,7 +393,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMGamePlayViewController.h"/>
             <relationships>
                 <relationship kind="action" name="answer:"/>
-                <relationship kind="action" name="playAgain:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="_answer1ImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_answer2ImageView" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="_answer3ImageView" candidateClass="UIImageView"/>
@@ -424,10 +404,6 @@
         </class>
         <class className="WZMMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/WZMMainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="selectLevel:"/>
-                <relationship kind="action" name="unwindToMain:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

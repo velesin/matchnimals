@@ -12,21 +12,11 @@
 #import "WZMArrayHelper.h"
 #import "WZMRandomizingGameControllerDataSource.h"
 
-
-@interface WZMRandomizingGameControllerDataSourceMock : WZMRandomizingGameControllerDataSource
-
-@property (nonatomic, retain) WZMArrayHelper* arrayHelper;
-
-@end
-
-@implementation WZMRandomizingGameControllerDataSourceMock @end
-
-
 @implementation WZMRandomizingGameControllerDataSourceTests
 {
     NSArray* questionAnswerPairs;
     id arrayHelperMock;
-    WZMRandomizingGameControllerDataSourceMock* dataSource;
+    WZMRandomizingGameControllerDataSource* dataSource;
 }
 
 - (void)setUp
@@ -39,14 +29,14 @@
                             @[@"q5", @"a5"],
                             ];
     
-    WZMArrayHelper* arrayHelper = [[WZMArrayHelper alloc] init];
-    arrayHelperMock = [OCMockObject partialMockForObject:arrayHelper];
+    arrayHelperMock = [OCMockObject partialMockForObject:[[WZMArrayHelper alloc] init]];
+    id arrayHelperClassMock = [OCMockObject mockForClass:[WZMArrayHelper class]];
+    [[[arrayHelperClassMock stub] andReturn:arrayHelperMock] sharedInstance];
 }
 
 - (void)test_that_data_source_builds_and_sorts_rounds_properly_when_helper_always_returns_identical_array
 {
-    dataSource = [[WZMRandomizingGameControllerDataSourceMock alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:2 numberOfAnswers:3];
-    dataSource.arrayHelper = arrayHelperMock;
+    dataSource = [[WZMRandomizingGameControllerDataSource alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:2 numberOfAnswers:3];
     
     [[[arrayHelperMock stub] andCall:@selector(returnIdenticalArray:) onObject:self] shuffleArray:[OCMArg any]];
     
@@ -61,8 +51,7 @@
 
 - (void)test_that_data_source_builds_and_sorts_rounds_properly_when_helper_always_returns_reversed_array
 {
-    dataSource = [[WZMRandomizingGameControllerDataSourceMock alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:2 numberOfAnswers:3];
-    dataSource.arrayHelper = arrayHelperMock;
+    dataSource = [[WZMRandomizingGameControllerDataSource alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:2 numberOfAnswers:3];
     
     [[[arrayHelperMock stub] andCall:@selector(returnReversedArray:) onObject:self] shuffleArray:[OCMArg any]];
     
@@ -77,8 +66,7 @@
 
 - (void)test_that_data_source_respects_number_of_questions_and_number_of_answers_params
 {
-    dataSource = [[WZMRandomizingGameControllerDataSourceMock alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:3 numberOfAnswers:2];
-    dataSource.arrayHelper = arrayHelperMock;
+    dataSource = [[WZMRandomizingGameControllerDataSource alloc] initWithQuestionAnswerPairs:questionAnswerPairs numberOfQuestions:3 numberOfAnswers:2];
     
     [[[arrayHelperMock stub] andCall:@selector(returnIdenticalArray:) onObject:self] shuffleArray:[OCMArg any]];
     

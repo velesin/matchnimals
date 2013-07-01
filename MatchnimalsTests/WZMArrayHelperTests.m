@@ -111,4 +111,19 @@
     STAssertEqualObjects(actualMappedArray, expectedMappedArray, nil);
 }
 
+- (void)test_that_sharedInstance_factory_returns_correct_object_type
+{
+    WZMArrayHelper* helper = [WZMArrayHelper sharedInstance];
+    
+    STAssertTrue([helper isMemberOfClass:[WZMArrayHelper class]], nil);
+}
+
+- (void)test_that_two_subsequent_calls_to_sharedArrayHelper_factory_return_the_same_shared_object
+{
+    WZMArrayHelper* helper1 = [WZMArrayHelper sharedInstance];
+    WZMArrayHelper* helper2 = [WZMArrayHelper sharedInstance];
+    
+    STAssertEqualObjects(helper1, helper2, nil);
+}
+
 @end

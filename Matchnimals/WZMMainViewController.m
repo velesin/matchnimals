@@ -7,6 +7,10 @@
 //
 
 #import "WZMMainViewController.h"
+#import "WZMPlistDataReader.h"
+#import "WZMDataSourceFactory.h"
+#import "WZMGameController.h"
+#import "WZMGamePlayViewController.h"
 
 @interface WZMMainViewController ()
 
@@ -23,7 +27,14 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    NSInteger levelNumber = ((UIImageView*)sender).tag;
     
+    WZMGameController* gameController = [[WZMGameController alloc] init];
+    gameController.dataSource = [WZMDataSourceFactory dataSourceForLevel:levelNumber];
+    gameController.delegate = segue.destinationViewController;
+    
+    WZMGamePlayViewController* gamePlayViewController = segue.destinationViewController;
+    gamePlayViewController.gameController = gameController;
 }
 
 - (void)viewDidLoad

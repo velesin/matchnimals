@@ -13,6 +13,16 @@
     NSArray* _levelsPlist;
 }
 
+static WZMPlistDataReader* _sharedInstance;
+
++ (WZMPlistDataReader*)sharedInstance
+{
+    if (!_sharedInstance) {
+        _sharedInstance = [[WZMPlistDataReader alloc] init];
+    }
+    return _sharedInstance;
+}
+
 - (NSArray*)questionAnswerPairsForLevel:(NSInteger)levelNumber
 {
     return [self levelsPlist][levelNumber - 1];

@@ -10,6 +10,8 @@
 
 @interface WZMArrayHelper : NSObject
 
++ (WZMArrayHelper*)sharedInstance;
+
 - (NSArray*)shuffleArray:(NSArray*)array;
 - (NSArray*)first:(NSInteger)numberOfObjectsToReturn objectsFromArray:(NSArray*)array;
 - (NSArray*)allButFirst:(NSInteger)numberOfObjectsToSkip objectsFromArray:(NSArray*)array;
