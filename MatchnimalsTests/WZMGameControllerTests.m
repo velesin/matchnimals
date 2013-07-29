@@ -24,14 +24,16 @@
 
 - (void)setUp
 {
-    round1 = [[WZMGameRound alloc] initWithQuestionImageName:@"q1"
-                                           answerImageNames:@[@"a11", @"a12", @"a13"]
-                                         correctAnswerNumber:1];
+    round1 = [[WZMGameRound alloc] initWithRoundNumber:1
+                                     questionImageName:@"q1"
+                                      answerImageNames:@[@"a11", @"a12", @"a13"]
+                                   correctAnswerNumber:1];
     
-    round2 = [[WZMGameRound alloc] initWithQuestionImageName:@"q2"
-                                           answerImageNames:@[@"a21", @"a22", @"a23"]
-                                         correctAnswerNumber:2];
- 
+    round2 = [[WZMGameRound alloc] initWithRoundNumber:2
+                                     questionImageName:@"q2"
+                                      answerImageNames:@[@"a21", @"a22", @"a23"]
+                                   correctAnswerNumber:2];
+    
     dataSourceMock = [OCMockObject mockForProtocol:@protocol(WZMGameControllerDataSource)];
     delegateMock = [OCMockObject mockForProtocol:@protocol(WZMGameControllerDelegate)];
     [delegateMock setExpectationOrderMatters:YES];

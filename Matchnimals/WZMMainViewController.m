@@ -27,14 +27,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSInteger levelNumber = ((UIImageView*)sender).tag;
-    
-    WZMGameController* gameController = [[WZMGameController alloc] init];
-    gameController.dataSource = [WZMDataSourceFactory dataSourceForLevel:levelNumber];
-    gameController.delegate = segue.destinationViewController;
-    
-    WZMGamePlayViewController* gamePlayViewController = segue.destinationViewController;
-    gamePlayViewController.gameController = gameController;
+    if ([segue.identifier isEqual: @"GamePlay"]) {
+        NSInteger levelNumber = ((UIImageView*)sender).tag;
+        
+        WZMGameController* gameController = [[WZMGameController alloc] init];
+        gameController.dataSource = [WZMDataSourceFactory dataSourceForLevel:levelNumber];
+        gameController.delegate = segue.destinationViewController;
+        
+        WZMGamePlayViewController* gamePlayViewController = segue.destinationViewController;
+        gamePlayViewController.gameController = gameController;
+    }
 }
 
 - (void)viewDidLoad

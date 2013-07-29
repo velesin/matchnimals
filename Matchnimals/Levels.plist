@@ -3,126 +3,242 @@
 <plist version="1.0">
 <array>
 	<array>
-		<dict>
-			<key>questionImageName</key>
+		<array>
 			<string>armadillo</string>
-			<key>answerImageName</key>
 			<string>armadillo_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>beaver</string>
-			<key>answerImageName</key>
 			<string>beaver_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>chameleon</string>
-			<key>answerImageName</key>
 			<string>chameleon_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>crocodile</string>
-			<key>answerImageName</key>
 			<string>crocodile_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>dove</string>
-			<key>answerImageName</key>
 			<string>dove_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>fox</string>
-			<key>answerImageName</key>
 			<string>fox_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>horse</string>
-			<key>answerImageName</key>
 			<string>horse_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>kangaroo</string>
-			<key>answerImageName</key>
 			<string>kangaroo_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>peacock</string>
-			<key>answerImageName</key>
 			<string>peacock_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>rabbit</string>
-			<key>answerImageName</key>
 			<string>rabbit_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>racoon</string>
-			<key>answerImageName</key>
 			<string>racoon_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>rooster</string>
-			<key>answerImageName</key>
 			<string>rooster_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>seahorse</string>
-			<key>answerImageName</key>
 			<string>seahorse_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>seal</string>
-			<key>answerImageName</key>
 			<string>seal_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>skunk</string>
-			<key>answerImageName</key>
 			<string>skunk_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>squirrel</string>
-			<key>answerImageName</key>
 			<string>squirrel_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>stingray</string>
-			<key>answerImageName</key>
 			<string>stingray_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>swallow</string>
-			<key>answerImageName</key>
 			<string>swallow_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>turkey</string>
-			<key>answerImageName</key>
 			<string>turkey_tail</string>
-		</dict>
-		<dict>
-			<key>questionImageName</key>
+		</array>
+		<array>
 			<string>whale</string>
-			<key>answerImageName</key>
 			<string>whale_tail</string>
-		</dict>
+		</array>
+	</array>
+	<array>
+		<array>
+			<string>ant_eater</string>
+			<string>ant</string>
+		</array>
+		<array>
+			<string>bear</string>
+			<string>honey</string>
+		</array>
+		<array>
+			<string>boar</string>
+			<string>acorns</string>
+		</array>
+		<array>
+			<string>cat</string>
+			<string>milk</string>
+		</array>
+		<array>
+			<string>caterpillar</string>
+			<string>leaves</string>
+		</array>
+		<array>
+			<string>cow</string>
+			<string>grass</string>
+		</array>
+		<array>
+			<string>dog</string>
+			<string>bone</string>
+		</array>
+		<array>
+			<string>frog</string>
+			<string>fly</string>
+		</array>
+		<array>
+			<string>hedgehog</string>
+			<string>apple</string>
+		</array>
+		<array>
+			<string>horse_2</string>
+			<string>hay</string>
+		</array>
+		<array>
+			<string>lion</string>
+			<string>meat</string>
+		</array>
+		<array>
+			<string>monkey</string>
+			<string>banana</string>
+		</array>
+		<array>
+			<string>mouse</string>
+			<string>cheese</string>
+		</array>
+		<array>
+			<string>pelican</string>
+			<string>fish</string>
+		</array>
+		<array>
+			<string>rabbit_2</string>
+			<string>carrot</string>
+		</array>
+		<array>
+			<string>rooster_2</string>
+			<string>wheat</string>
+		</array>
+		<array>
+			<string>squirrel_2</string>
+			<string>nuts</string>
+		</array>
+		<array>
+			<string>stork</string>
+			<string>frog_small</string>
+		</array>
+	</array>
+	<array>
+		<array>
+			<string>ant_2</string>
+			<string>anthill</string>
+		</array>
+		<array>
+			<string>bat</string>
+			<string>cave</string>
+		</array>
+		<array>
+			<string>beaver_2</string>
+			<string>beaver_dam</string>
+		</array>
+		<array>
+			<string>bee</string>
+			<string>bee_hive</string>
+		</array>
+		<array>
+			<string>camel</string>
+			<string>desert</string>
+		</array>
+		<array>
+			<string>crab</string>
+			<string>beach</string>
+		</array>
+		<array>
+			<string>deer</string>
+			<string>forest</string>
+		</array>
+		<array>
+			<string>dog_2</string>
+			<string>doghouse</string>
+		</array>
+		<array>
+			<string>koala</string>
+			<string>eucalyptus</string>
+		</array>
+		<array>
+			<string>mole</string>
+			<string>mole_hill</string>
+		</array>
+		<array>
+			<string>mountain_goat</string>
+			<string>rocks</string>
+		</array>
+		<array>
+			<string>mouse_2</string>
+			<string>mouse_hole</string>
+		</array>
+		<array>
+			<string>owl</string>
+			<string>hollow</string>
+		</array>
+		<array>
+			<string>pig</string>
+			<string>farm</string>
+		</array>
+		<array>
+			<string>polar_bear</string>
+			<string>ice</string>
+		</array>
+		<array>
+			<string>rabbit_3</string>
+			<string>rabbit_hole</string>
+		</array>
+		<array>
+			<string>rooster_3</string>
+			<string>hen_house</string>
+		</array>
+		<array>
+			<string>stork_2</string>
+			<string>stork_nest</string>
+		</array>
+		<array>
+			<string>swallow_2</string>
+			<string>swallow_nest</string>
+		</array>
+		<array>
+			<string>swan</string>
+			<string>lake</string>
+		</array>
 	</array>
 </array>
 </plist>

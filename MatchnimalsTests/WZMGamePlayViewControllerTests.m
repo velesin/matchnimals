@@ -14,9 +14,6 @@
 @implementation WZMGamePlayViewControllerTests
 {
     WZMGamePlayViewController* controller;
-    
-    WZMGameRound* round1;
-    WZMGameRound* round2;
 }
 
 //- (void)setUp

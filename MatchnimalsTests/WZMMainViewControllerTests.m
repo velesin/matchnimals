@@ -53,7 +53,7 @@
 {
     [controller prepareForSegue:segue sender:firstLevelImage];
     
-    WZMGameController* gameController = gamePlayViewController.gameController;    
+    WZMGameController* gameController = gamePlayViewController.gameController;
     STAssertEqualObjects(gameController.dataSource, dataSourceForFirstLevelMock, nil);
 }
 
@@ -79,6 +79,13 @@
     STAssertEqualObjects(gameController.dataSource, dataSourceForSecondLevelMock, nil);
 }
 
-//behavior is triggered only by a proper segue identifier
+- (void)test_that_game_play_view_controller_is_initialized_only_for_GamePlay_segue_identifier
+{
+    UIStoryboardSegue* wrongSegue = [[UIStoryboardSegue alloc] initWithIdentifier:@"SomeOtherSegue" source:controller destination:gamePlayViewController];
+    
+    [controller prepareForSegue:wrongSegue sender:firstLevelImage];
+    
+    STAssertNil(gamePlayViewController.gameController, nil);
+}
 
 @end

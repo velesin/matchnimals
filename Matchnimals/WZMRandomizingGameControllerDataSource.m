@@ -44,7 +44,12 @@
     NSArray* correctQuestionAnswerPairs = [arrayHelper first:self.numberOfQuestions objectsFromArray:randomizedQuestionAnswerPairs];
     NSArray* wrongQuestionAnswerPairsPool = [arrayHelper allButFirst:self.numberOfQuestions objectsFromArray:randomizedQuestionAnswerPairs];
     
+    __block NSInteger roundNumber = 0;
+    
     NSArray* rounds = [arrayHelper mapArray:correctQuestionAnswerPairs withBlock:^id(NSArray* correctQuestionAnswerPair) {
+        
+        roundNumber += 1;
+        
         NSString* questionImageName = correctQuestionAnswerPair[0];
         NSString* correctAnswerImageName = correctQuestionAnswerPair[1];
         
@@ -60,7 +65,10 @@
         
         NSInteger correctAnswerNumber = [randomizedAnswerImageNames indexOfObject:correctAnswerImageName] + 1;
         
-        return [[WZMGameRound alloc] initWithQuestionImageName:questionImageName answerImageNames:randomizedAnswerImageNames correctAnswerNumber:correctAnswerNumber];
+        return [[WZMGameRound alloc] initWithRoundNumber:roundNumber
+                                       questionImageName:questionImageName
+                                        answerImageNames:randomizedAnswerImageNames
+                                     correctAnswerNumber:correctAnswerNumber];
     }];
     
     return rounds;

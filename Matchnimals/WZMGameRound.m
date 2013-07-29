@@ -10,13 +10,15 @@
 
 @implementation WZMGameRound
 
-- (id)initWithQuestionImageName:(NSString*)questionImageName
-              answerImageNames:(NSArray*)answerImageNames
-            correctAnswerNumber:(NSInteger)correctAnswerNumber
+- (id)initWithRoundNumber:(NSInteger)roundNumber
+        questionImageName:(NSString*)questionImageName
+         answerImageNames:(NSArray*)answerImageNames
+      correctAnswerNumber:(NSInteger)correctAnswerNumber
 {
     self = [super init];
     
     if (self) {
+        _roundNumber = roundNumber;
         _questionImageName = questionImageName;
         _answerImageNames = answerImageNames;
         _correctAnswerNumber = correctAnswerNumber;

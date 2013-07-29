@@ -13,6 +13,7 @@
 {
     WZMGameRound* gamePlayRound;
     
+    NSInteger roundNumberFixture;
     NSString* questionImageNameFixture;
     NSArray* answerImageNamesFixture;
     NSInteger correctAnswerNumberFixture;
@@ -20,13 +21,20 @@
 
 - (void)setUp
 {
+    roundNumberFixture = 3;
     questionImageNameFixture = @"question image name";
     answerImageNamesFixture = @[@"answer image name 1", @"answer image name 2"];
     correctAnswerNumberFixture = 1;
     
-    gamePlayRound = [[WZMGameRound alloc] initWithQuestionImageName:questionImageNameFixture
-                                              answerImageNames:answerImageNamesFixture
-                                            correctAnswerNumber:correctAnswerNumberFixture];
+    gamePlayRound = [[WZMGameRound alloc] initWithRoundNumber:roundNumberFixture
+                                            questionImageName:questionImageNameFixture
+                                             answerImageNames:answerImageNamesFixture
+                                          correctAnswerNumber:correctAnswerNumberFixture];
+}
+
+- (void)test_that_roundNumber_returns_correct_value
+{
+    STAssertEquals([gamePlayRound roundNumber], roundNumberFixture, nil);
 }
 
 - (void)test_that_questionImageName_returns_correct_value

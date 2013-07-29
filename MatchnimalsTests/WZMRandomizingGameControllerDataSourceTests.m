@@ -41,8 +41,8 @@
     [[[arrayHelperMock stub] andCall:@selector(returnIdenticalArray:) onObject:self] shuffleArray:[OCMArg any]];
     
     NSArray* expectedRoundsArrayRepresentation = @[
-                                                   @[@"q1", @[@"a1", @"a3", @"a4"], @1],
-                                                   @[@"q2", @[@"a2", @"a3", @"a4"], @1],
+                                                   @[@1, @"q1", @[@"a1", @"a3", @"a4"], @1],
+                                                   @[@2, @"q2", @[@"a2", @"a3", @"a4"], @1],
                                                    ];
     NSArray* actualRoundsArrayRepresentation = [self arrayRepresentationForRounds:[dataSource roundsForNewGame]];
     
@@ -56,8 +56,8 @@
     [[[arrayHelperMock stub] andCall:@selector(returnReversedArray:) onObject:self] shuffleArray:[OCMArg any]];
     
     NSArray* expectedRoundsArrayRepresentation = @[
-                                                   @[@"q5", @[@"a2", @"a1", @"a5"], @3],
-                                                   @[@"q4", @[@"a2", @"a1", @"a4"], @3],
+                                                   @[@1, @"q5", @[@"a2", @"a1", @"a5"], @3],
+                                                   @[@2, @"q4", @[@"a2", @"a1", @"a4"], @3],
                                                    ];
     NSArray* actualRoundsArrayRepresentation = [self arrayRepresentationForRounds:[dataSource roundsForNewGame]];
     
@@ -71,9 +71,9 @@
     [[[arrayHelperMock stub] andCall:@selector(returnIdenticalArray:) onObject:self] shuffleArray:[OCMArg any]];
     
     NSArray* expectedRoundsArrayRepresentation = @[
-                                                   @[@"q1", @[@"a1", @"a4"], @1],
-                                                   @[@"q2", @[@"a2", @"a4"], @1],
-                                                   @[@"q3", @[@"a3", @"a4"], @1],
+                                                   @[@1, @"q1", @[@"a1", @"a4"], @1],
+                                                   @[@2, @"q2", @[@"a2", @"a4"], @1],
+                                                   @[@3, @"q3", @[@"a3", @"a4"], @1],
                                                    ];
     NSArray* actualRoundsArrayRepresentation = [self arrayRepresentationForRounds:[dataSource roundsForNewGame]];
     
@@ -98,6 +98,7 @@
     
     for (WZMGameRound* round in rounds) {
         [arrayRepresentation addObject:@[
+         [NSNumber numberWithInteger:[round roundNumber]],
          [round questionImageName],
          [round answerImageNames],
          [NSNumber numberWithInteger:[round correctAnswerNumber]],
